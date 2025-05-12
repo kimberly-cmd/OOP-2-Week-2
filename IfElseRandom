@@ -1,0 +1,26 @@
+mport java.util.random.*;
+
+public class RandomIfElse {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int daysValid = random.nextInt(50);
+        int discountPercentage;
+
+        if (daysValid < 50) {
+            discountPercentage = 5;
+            System.out.println("You are eligible for " + discountPercentage + "percent discount");
+        } else if (daysValid < 40) {
+            discountPercentage = 10;
+            System.out.println("You are eligible for " + discountPercentage + "percent discount");
+        } else if (daysValid < 30) {
+            discountPercentage = 15;
+            System.out.println("You are eligible for " + discountPercentage + "percent discount");
+        } else if (daysValid < 20) {
+            discountPercentage = 20;
+            System.out.println("You are eligible for " + discountPercentage + "percent discount");
+        } else if (daysValid < 10) {
+            discountPercentage = 25;
+            System.out.println("You are eligible for " + discountPercentage + "percent discount");
+        }
+    }
+}
